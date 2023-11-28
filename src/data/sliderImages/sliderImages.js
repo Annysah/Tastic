@@ -6,16 +6,16 @@ export default [
   {
     title: "Savor Our Signature Dishes",
     description: "Delight your taste buds with our chef's special creations, uniquely crafted to bring you a taste of perfection.",
-    urls: image1,
+    imageUrl: image1,
   },
   {
     title: "Discover Exquisite Flavors",
     description: "Indulge in a culinary journey with our carefully crafted dishes, prepared with passion and premium ingredients.",
-    urls: image2,
+    imageUrl: image2,
   },
   {
     title: "Exceptional Dining, Every Time",
     description: "Immerse yourself in a world of culinary excellence, where each dish is a masterpiece and every moment is memorable.",
-    urls: image3,
+    imageUrl: image3,
   }
 ];
