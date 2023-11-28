@@ -1,0 +1,26 @@
+:root {
+  --font-forum: "Forum", serif;
+  --font-dm: "DM Sans", sans-serif;
+
+  --golden-yellow: #daa520;
+  --golden-brown: #e4c590;
+  --orange-color: #ffab1c;
+  --creamy-yellow: #f9e797;
+  --creamy-beige: #f5f5dc;
+  --warm-gray: #bdc3c7;
+  --normal-black: #000000;
+  --charcoal-black: #333333;
+  --crisp-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
