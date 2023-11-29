@@ -1,16 +1,3 @@
-.image__bg {
-  background: url("./assets/bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
-.slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 /* Navbar */
 
 .navbar {
@@ -59,7 +46,8 @@
   color: var(--golden-yellow);
 }
 
-.navbar-link a:hover:before, .navbar-link a:hover:after {
+.navbar-link a:hover:before,
+.navbar-link a:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -150,7 +138,7 @@
   }
 
   .navbar-mobile {
-      display: flex;
+    display: flex;
   }
 }
 
@@ -167,7 +155,6 @@
     width: 110px;
   }
 }
-
 
 /* Hero */
 .slider-container {
@@ -191,8 +178,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
-  z-index: 1; 
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .slides {
@@ -206,7 +193,7 @@
   height: 100%;
   position: absolute;
   object-fit: cover;
-  /*animation: zoom 5s linear;*/
+  animation: zoom 5s linear;
 }
 
 .slide-title,
@@ -219,7 +206,7 @@
   z-index: 10;
 }
 
-/*@keyframes zoom {
+@keyframes zoom {
   0% {
     transform: scale(1.3);
   }
@@ -231,24 +218,25 @@
   100% {
     transform: scale(1.3);
   }
-}*/
+}
 
 .slide-title {
-  top: 20%;
+  top: 22%;
   font-family: var(--font-forum);
   font-size: calc(0.8rem + 6.2vw);
+  font-weight: 400;
 }
 
 .slide-text {
-  top: 46%;
+  top: 48%;
   font-family: var(--font-dm);
   font-size: calc(0.1rem + 1vw);
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .prev,
-.next { 
+.next {
   position: absolute;
   top: 40%;
   z-index: 100;
@@ -267,17 +255,18 @@
 }
 
 /* About */
-.about-section {
+.about {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 6rem;
   color: var(--crisp-white);
 }
 
 .about-history,
 .about-image {
-  width: 100%; 
+  width: 100%;
   margin-bottom: 20px;
   padding: 0 5rem;
 }
@@ -285,6 +274,7 @@
 .about-history h2 {
   font-family: var(--font-forum);
   font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
   text-align: center;
 }
 
@@ -295,17 +285,15 @@
   letter-spacing: 0.5px;
 }
 
-@media (min-width: 768px) {
-  .about-history,
-  .about-image {
-    width: 48%;
-  }
-}
-
 @media (min-width: 1200px) {
+  .about {
+    padding: 2rem;
+  }
+
   .about-history,
   .about-image {
     width: 45%;
+    padding: 0 1rem;
   }
 }
 
@@ -314,6 +302,186 @@
   height: auto;
 }
 
+/* Menu */
+.menu {
+  background: var(--black);
+  padding: 3rem 5rem;
+}
 
-/* Photo by <a href="https://unsplash.com/@sammoghadamkhamseh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sam Moghadam Khamseh</a> on <a href="https://unsplash.com/photos/fried-food-on-white-ceramic-plate-VpOpy6QrDrs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  */
+.menu-title h2 {
+  font-family: var(--font-forum);
+  font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
+  text-align: center;
+  color: var(--crisp-white);
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 3rem;
+}
+
+.card-title {
+  color: var(--golden-yellow);
+  font-family: var(--font-dm);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card-title:hover,
+.menu-card .span:hover {
+  color: var(--creamy-beige);
+}
+
+.menu-card .span {
+  color: var(--golden-yellow);
+  font-size: 1.4rem;
+  font-family: var(--font-dm);
+  margin-block: 10px;
+}
+
+.menu-card .card-text {
+  color: var(--crisp-white);
+  font-family: var(--font-dm);
+  font-size: 0.9rem;
+  line-height: 4em;
+}
+
+@media (min-width: 575px) {
+  .menu-card .title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu-card .span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+  }
+
+  .menu-card .span::before {
+    content: "";
+    height: 6px;
+    flex-grow: 1;
+    border-block: 1px solid var(--crisp-white);
+  }
+}
+
+@media (min-width: 992px) {
+  .menu .menu-grid::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 45%;
+    border-inline-start: 1px solid var(--creamy-beige);
+  }
+}
+
+/* Team */
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chef-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chef-content p {
+  color: var(--crisp-white);
+  font-family: var(--font-dm);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  padding: 0 50px;
+}
+
+@media (min-width: 992px) {
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    text-align: left;
+  }
+
+  .team h2 {
+    font-family: var(--font-forum);
+    font-size: calc(1.1rem + 2.2vw);
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 0.04em;
+    color: var(--crisp-white);
+    padding: 0 50px;
+  }
+
+  .team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-content .container {
+    position: relative;
+  }
+
+  .team .section-subtitle::after {
+    margin-inline: 0;
+  }
+
+  .team-content .container {
+    justify-content: flex-start;
+  }
+}
+
+/* Offers */
+.offers {
+  background-color: var(--varied-black);
+  padding: 6rem;
+}
+
+.offers h2 {
+  font-family: var(--font-forum);
+  font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
+  color: var(--crisp-white);
+  text-align: center;
+  margin-block: 20px;
+}
+
+.offers p {
+  color: var(--crisp-white);
+  font-family: var(--font-dm);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.offer-card {
+  width: 400px;
+  padding: 40px 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.offer-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+  transition: 0.5s ease-in;
+}
+
+.offer:hover .card-icon {
+  transform: scale(-1) rotate(180deg);
+}

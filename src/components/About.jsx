@@ -3,7 +3,7 @@ import aboutImage from "../assets/about.avif";
 
 const About = () => {
   return (
-    <div className="about-section">
+    <div className="about">
       <div className="about-history">
         <h2>Our History</h2>
         <p>

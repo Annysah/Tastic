@@ -9,7 +9,9 @@
   --creamy-beige: #f5f5dc;
   --warm-gray: #bdc3c7;
   --normal-black: #131313;
+  --black: #000000;
   --charcoal-black: #333333;
+  --varied-black: #161718;
   --crisp-white: #ffffff;
 }
 
@@ -18,7 +20,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-image: url('./assets/bg.png');
+  background: url("./assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 a {
