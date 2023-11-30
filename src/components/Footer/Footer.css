@@ -1,0 +1,6 @@
+.footer p {
+  text-align: center;
+  color: var(--crisp-white);
+  font-family: var(--font-forum);
+  font-size: 1.3rem;
+}

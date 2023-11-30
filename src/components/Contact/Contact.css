@@ -1,0 +1,95 @@
+.contact {
+  padding: 0 6rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--normal-black);
+  padding: 6rem 8rem;
+}
+
+.form-column {
+  flex: 2;
+  color: var(--crisp-white);
+  padding: 2rem 8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hours-column {
+  flex: 1;
+  padding: 20px;
+  background: var(--varied-black);
+  backdrop-filter: blur(50px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid var(--creamy-beige);
+}
+
+.hours-column:hover {
+  animation: bounce 0.5s infinite alternate;
+}
+
+.contact h2 {
+  font-family: var(--font-forum);
+  font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
+  color: var(--crisp-white);
+  text-align: center;
+  margin-block: 20px;
+}
+
+.contact p {
+  color: var(--golden-brown);
+  font-family: var(--font-dm);
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact h3 {
+  color: var(--crisp-white);
+  font-family: var(--font-forum);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-family: var(--font-dm);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--crisp-white);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  color: var(--golden-brown);
+  margin: 0 1rem;
+  font-size: 2.2rem;
+}

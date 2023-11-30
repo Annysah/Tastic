@@ -1,0 +1,56 @@
+.services {
+  background-color: var(--black);
+  padding: 6rem;
+}
+
+.services h2 {
+  font-family: var(--font-forum);
+  font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
+  color: var(--crisp-white);
+  text-align: center;
+  margin-block: 20px;
+}
+
+.services h3 {
+  color: var(--golden-brown);
+  font-family: var(--font-forum);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.services p {
+  color: var(--crisp-white);
+  font-family: var(--font-dm);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.services-card {
+  width: 400px;
+  padding: 40px 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid var(--creamy-beige);
+  text-align: center;
+}
+
+.icon {
+  filter: invert(80%);
+  width: 50px;
+  height: 50px;
+}
+
+.icon:hover {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

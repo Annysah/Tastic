@@ -1,0 +1,71 @@
+.menu {
+  background: var(--black);
+  padding: 3rem 5rem;
+}
+
+.menu-title h2 {
+  font-family: var(--font-forum);
+  font-size: calc(1.1rem + 2.2vw);
+  font-weight: 400;
+  text-align: center;
+  color: var(--crisp-white);
+}
+
+.card-title {
+  color: var(--golden-brown);
+  font-family: var(--font-dm);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card-title:hover,
+.menu-card .span:hover {
+  color: var(--golden-yellow);
+}
+
+.menu-card .span {
+  color: var(--golden-brown);
+  font-size: 1.4rem;
+  font-family: var(--font-dm);
+  margin-block: 10px;
+}
+
+.menu-card .card-text {
+  color: var(--crisp-white);
+  font-family: var(--font-dm);
+  font-size: 0.9rem;
+  line-height: 4em;
+}
+
+@media (min-width: 575px) {
+  .menu-card .title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu-card .span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+  }
+
+  .menu-card .span::before {
+    content: "";
+    flex-grow: 1;
+    border-block: 1px solid var(--crisp-white);
+  }
+}
+
+@media (min-width: 992px) {
+  .menu .grid::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 45%;
+    border-inline-start: 1px solid var(--creamy-beige);
+  }
+}
