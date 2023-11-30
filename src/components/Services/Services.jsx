@@ -8,7 +8,7 @@ import "./Services.css";
 const Offers = () => {
   return (
     <>
-      <section className="services">
+      <div className="services" id="services">
         <div>
           <h2>Our Services</h2>
 
@@ -50,7 +50,7 @@ const Offers = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </div>
     </>
   );
 };

@@ -6,7 +6,7 @@ import './Team.css'
 const Team = () => {
   return (
     <>
-      <section className="team">
+      <section className="team" id="team">
         <div className="team-banner">
           <img src={chef} alt="Chef" className="team-image" />
         </div>
