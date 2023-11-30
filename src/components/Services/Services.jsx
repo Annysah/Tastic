@@ -12,7 +12,7 @@ const Offers = () => {
         <div>
           <h2>Our Services</h2>
 
-          <ul className="grid">
+          <ul className="grid services-grid">
             <li>
               <div className="services-card">
                 <div>

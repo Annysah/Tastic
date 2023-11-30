@@ -9,7 +9,7 @@ const Menu = () => {
           <h2>Our Unique Menu</h2>
         </div>
 
-        <ul className="grid">
+        <ul className="grid menu-grid">
           <div>
             <li>
               <div className="menu-card">
@@ -76,7 +76,7 @@ const Menu = () => {
             </li>
           </div>
 
-          <div>
+          <div className="menu-column">
             <li>
               <div className="menu-card">
                 <div>

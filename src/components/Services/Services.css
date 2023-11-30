@@ -12,6 +12,11 @@
   margin-block: 20px;
 }
 
+.services-grid {
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .services h3 {
   color: var(--golden-brown);
   font-family: var(--font-forum);
@@ -52,5 +57,11 @@
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .services-card {
+    width: 200px;
   }
 }

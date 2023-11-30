@@ -1,25 +1,30 @@
 .contact {
-  padding: 0 6rem;
+  padding: 6rem;
 }
 
 .contact-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: var(--normal-black);
-  padding: 6rem 8rem;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  gap: 5rem;
 }
 
 .form-column {
   flex: 2;
   color: var(--crisp-white);
-  padding: 2rem 8rem;
+  padding: 2rem 4rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .hours-column {
   flex: 1;
-  padding: 20px;
+  padding: 2rem;
   background: var(--varied-black);
   backdrop-filter: blur(50px);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);

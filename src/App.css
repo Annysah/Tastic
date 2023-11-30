@@ -23,9 +23,7 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   padding: 3rem;
-  gap: 20px;
 }

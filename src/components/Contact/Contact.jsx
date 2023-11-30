@@ -2,14 +2,14 @@ import React from "react";
 import { MdOutlineFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-import './Contact.css'
+import "./Contact.css";
 
 const Contact = () => {
   return (
     <>
-      <section className="contact" id="contact">
+      <div className="contact" id="contact">
         <div className="contact-container">
-             <div className="form-column">
+          <div className="form-column">
             <h2>Reserve a Table</h2>
             <form>
               <label>Full Name</label>
@@ -37,8 +37,14 @@ const Contact = () => {
           <div className="hours-column">
             <div>
               <h2>Opening Hours</h2>
-              <p>Monday - Friday: <br />9:00 AM - 10:00 PM</p>
-              <p>Saturday - Sunday: <br />11:00 AM - 8:00 PM</p>
+              <p>
+                Monday - Friday: <br />
+                9:00 AM - 10:00 PM
+              </p>
+              <p>
+                Saturday - Sunday: <br />
+                11:00 AM - 8:00 PM
+              </p>
             </div>
 
             <div>
@@ -61,7 +67,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
